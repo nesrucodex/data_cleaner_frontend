@@ -90,13 +90,13 @@ export function AppSidebar() {
         </div>
       </SidebarHeader>
 
-      <SidebarContent>
+      <SidebarContent >
         <SidebarGroup>
           <SidebarGroupContent>
-            <SidebarMenu>
+            <SidebarMenu className="space-y-1">
               {navigationItems.map((item) => (
                 <SidebarMenuItem key={item.label} >
-                  <SidebarMenuButton asChild className={cn("rounded-sm", { "bg-primary text-white  hover:bg-primary/90 hover:text-white": pathname === item.pathname })}>
+                  <SidebarMenuButton asChild className={cn("rounded-sm h-10", { "bg-primary text-white  hover:bg-primary/90 hover:text-white": pathname === item.pathname })}>
                     <Link href={item.pathname}>
                       <item.icon />
                       <span>{item.label}</span>
