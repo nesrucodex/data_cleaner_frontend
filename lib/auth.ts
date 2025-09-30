@@ -31,7 +31,7 @@ export const signInAction = async ({ username, password }: SignInActionPayload) 
 
     cookie.set("token", token, {
         httpOnly: true,
-        secure: process.env.NODE_ENV === "production",
+       // secure: process.env.NODE_ENV === "production",
         path: "/",
     })
 

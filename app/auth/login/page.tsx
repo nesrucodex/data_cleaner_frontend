@@ -51,7 +51,7 @@ const LoginPage = () => {
                     <CardHeader>
                         <CardTitle className="text-3xl text-center">Sign In</CardTitle>
                         <CardDescription className="text-center">
-                            Analyze your data with ease
+                            Analyze your data with ease.
                         </CardDescription>
                     </CardHeader>
                     <CardContent className="space-y-3">
